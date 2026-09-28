@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("Git helps me record every meaningful change.\n");
+    printf("Feature branch: experiment safely before merging.\n");
 }
