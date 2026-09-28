@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <rect width="1200" height="720" rx="18" fill="#111827"/>
+  <rect width="1200" height="52" rx="18" fill="#1f2937"/>
+  <circle cx="28" cy="26" r="8" fill="#ff5f57"/>
+  <circle cx="54" cy="26" r="8" fill="#febc2e"/>
+  <circle cx="80" cy="26" r="8" fill="#28c840"/>
+  <text x="600" y="33" text-anchor="middle" fill="#d1d5db" font-family="Menlo, Monaco, monospace" font-size="16">Lab0 — merge conflict</text>
+  <g fill="#e5e7eb" font-family="Menlo, Monaco, monospace" font-size="22">
+    <text x="34" y="98"><tspan fill="#34d399">$</tspan> git switch main</text>
+    <text x="34" y="134">Switched to branch 'main'</text>
+    <text x="34" y="180"><tspan fill="#34d399">$</tspan> git merge feature</text>
+    <text x="34" y="216">Auto-merging main.c</text>
+    <text x="34" y="252" fill="#f87171">CONFLICT (content): Merge conflict in main.c</text>
+    <text x="34" y="288">Automatic merge failed; fix conflicts and then commit the result.</text>
+    <text x="34" y="334"><tspan fill="#34d399">$</tspan> git status --short</text>
+    <text x="34" y="370" fill="#fbbf24">UU main.c</text>
+    <text x="34" y="416"><tspan fill="#34d399">$</tspan> sed -n '1,20p' main.c</text>
+    <text x="34" y="452">#include &lt;stdio.h&gt;</text>
+    <text x="34" y="488">int main()</text>
+    <text x="34" y="524">{</text>
+    <text x="34" y="560" fill="#fbbf24">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</text>
+    <text x="34" y="596">    printf("Main branch: keep the stable version ready to use.\n");</text>
+    <text x="34" y="632" fill="#fbbf24">=======</text>
+    <text x="34" y="668">    printf("Feature branch: experiment safely before merging.\n");</text>
+    <text x="34" y="704" fill="#fbbf24">&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</text>
+  </g>
+</svg>

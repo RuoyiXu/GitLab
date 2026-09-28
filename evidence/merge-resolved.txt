@@ -1,0 +1,18 @@
+$ git status --short --branch
+## main...origin/main [ahead 4]
+?? evidence/
+
+$ git log --graph --oneline --decorate -6
+*   9c2b4a4 (HEAD -> main) merge: integrate feature branch and resolve conflict
+|\  
+| * 30f685b (feature) feat: customize feature branch message
+* | c13aa54 feat: customize main branch message
+|/  
+* ae600df feat: complete greeting TODO
+* 70ee6fc (origin/main) Initial commit
+
+$ make && ./main
+gcc -Wall -O2 -c main.c -o main.o
+gcc -Wall -O2 -o main main.o
+Main branch: keep the stable version ready to use.
+Feature branch: experiment safely before merging.
